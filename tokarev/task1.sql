@@ -1,6 +1,6 @@
 SELECT
 	ProductName,
     Price
-FROM git Products
+FROM Products
 ORDER BY Price
 LIMIT 3
