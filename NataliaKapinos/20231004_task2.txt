@@ -1,0 +1,9 @@
+// вывести товары, которые имеют стоимость ниже средней
+SELECT 
+    productID, 
+    ProductName, 
+    Price 
+FROM Products 
+WHERE price < (SELECT 
+                    avg(price) as avg_price 
+               FROM Products)
